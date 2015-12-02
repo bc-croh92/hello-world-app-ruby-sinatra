@@ -5,7 +5,6 @@ dev:
   volumes:
     - .:/opt/services/hello-world-app-ruby-sinatra
   command: bash -c "bundle && foreman start"
-  build: .
 
 prod:
   image: hub.services.bigcommerceapp.com/bigcommerce/hello-world-ruby:latest
